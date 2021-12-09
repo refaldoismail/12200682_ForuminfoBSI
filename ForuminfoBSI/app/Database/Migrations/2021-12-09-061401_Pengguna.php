@@ -10,7 +10,7 @@ class Pengguna extends Migration
     {
         $this->forge->addField([
             'id' => [
-                    'type'           => 'INT', 'constraint' => 4,
+                    'type'           => 'INT', 'constraint' => 6,
                     'unsigned'       => true,
                     'auto_increment' => true
                 ],
