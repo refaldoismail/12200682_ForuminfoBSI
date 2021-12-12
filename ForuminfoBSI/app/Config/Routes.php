@@ -42,13 +42,16 @@ $routes->get('/logout', function(){
     return redirect()->to('/login');
 });
 
-$routes->get('/pengguna-list', 'PenggunaController::index',['filter'=>'auth']);
+$routes->get('/pengguna-list', 'PenggunaController::index');
 $routes->get('/pengguna','PenggunaController::form',['filter'=>'auth']);
 $routes->post('/pengguna', 'PenggunaController::simpan',['filter'=>'auth']);
 $routes->get('pengguna/(:num|)','PenggunaController::edit/$1', ['filter'=>'auth']);
 $routes->patch('/pengguna', 'PenggunaController::patch', ['filter'=>'auth']);
 $routes->delete('/pengguna', 'PenggunaController::delete', ['filter'=>'auth']);
-
+$routes->get('/dashboard', 'SelamatDatang::hal_dashboard', ['filter'=>'auth']);
+$routes->get('/alamat', 'SelamatDatang::hal_alamat', ['filter'=>'auth']);
+$routes->get('/situs', 'SelamatDatang::hal_situs', ['filter'=>'auth']);
+$routes->get('/sosmed', 'SelamatDatang::hal_sosmed', ['filter'=>'auth']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

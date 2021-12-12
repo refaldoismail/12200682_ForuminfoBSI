@@ -27,4 +27,22 @@ class SelamatDatang extends BaseController {
         ]);
 
     }
+
+    public function hal_dashboard(){
+        return view('halaman/dashboard', [
+            'email'=> $this->session->get('email'),
+        ]);
+    }
+
+    public function hal_situs(){
+        return view('halaman/situs');
+    }
+
+    public function hal_alamat(){
+        return view('halaman/alamat');
+    }
+
+    public function hal_sosmed(){
+        return view('halaman/sosmed');
+    }
 }
