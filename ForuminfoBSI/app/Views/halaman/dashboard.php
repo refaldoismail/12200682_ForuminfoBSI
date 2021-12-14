@@ -248,6 +248,7 @@
                         
                         
                         <img src="http://elearning.bsi.ac.id/assets/assets_dasboard/img/home.svg" alt="">
+                        <h3>Saat ini Anda berada di situs Sistem Informasi Akademik Mahasiswa (Sisfo UBSI). Situs ini dikhususkan bagi mahasiswa/mahasiswi Akademi-akademi Bina Sarana Informatika dalam memperoleh informasi tentang UBSI </h3>
                     </div>   
                 </div> 
             </div>
